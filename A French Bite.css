@@ -1,0 +1,433 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header Bar*/
+header {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 10px 20px;
+		background-color: #7a2048; 
+		color: white;
+		width: 100%;
+		box-sizing: border-box;
+}
+
+html, body {
+			  margin: 0;
+			  padding: 0;
+			  width: 100%;
+}
+
+
+/* HOME PAGE */
+
+/* This is for the French patisserie description and history */
+.patisserie {
+				font-family: Times New Roman, Arial, sans-serif;
+				line-height: 1.6;
+				color: black; 
+				margin: 20px;
+				padding: 10px;
+				background-color: #FBF0EF;
+}
+
+/* This is for the extra paragraph explaining what the website is about to readers */
+.thoughts {
+			font-family: Times New Roman, Arial, sans-serif;
+			line-height: 1.6;
+			color: black; 
+			margin: 50px;
+			padding: 10px;
+}	
+
+
+/* This section is for the recipes button oresent in the header of the HOME PAGE */
+.buttonrecipe {
+				  background: none;
+				  margin-right: 10px;
+				  border: none;                   
+				  padding: 0;  
+				  margin-left: auto; 
+				  float: right;  
+}	
+
+.buttonrecipe a {
+					font-family: Times New Roman, Arial, sans-serif;
+					color: white;
+					font-size: 20px;
+					cursor: pointer;
+					display: inline-block;
+					text-decoration: none;
+}			
+
+.buttonrecipe:hover {
+						text-decoration: underline;     
+}
+
+
+/* STYLES OF THE LOGO */
+
+/* This is the logo for the HOME PAGE */
+.logo-section {
+				  display: flex;          
+				  justify-content: center;  
+				  align-items: center;    
+				  height: 300px;            
+				  background-color: white;    
+				  padding: 20px;   
+				  width: 100%;
+				  box-sizing: border-box;
+}
+
+/* Style the logo for both versions*/
+.logo {
+		  max-height: 500%;        
+		  max-width: 200%;          
+}
+
+/* This is the logo for all other pages the RECIPE pages */
+.logo-section-otherpages {
+							  display: flex;             
+							  justify-content: left;    
+							  align-items: left;      
+							  height: 150px;            
+							  background-color: white;   
+							  padding: 20px;   
+							  width: 100%;
+							  box-sizing: border-box;
+}
+
+
+
+
+/* This is the black line added in the pages for design choices and section seperator */
+.line {
+		  border: none;          
+		  border-top: 2px solid black; 
+		  margin: 10px 0;         
+}
+
+
+
+/* THIS IS ALL FOR THE GALLERY OF THE HOME PAGE, with the buttons redirecting to the matching pages as well */
+#gallery { 
+		   display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+		   justify-content: center; 
+		   margin-top: 30px; 
+}
+		   
+.item {
+		position: relative;
+		text-align: center;
+		color: black;
+		font-family: Times New Roman, Arial, sans-serif;
+		font-weight: bold;
+		width: calc(33.33% - 2em);
+		margin: 1em;
+		box-sizing: border-box;
+}
+
+.item img {		
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			max-width: 100%;
+			height: auto;
+			border: 2px solid;
+}
+
+.overlay-button {
+					position: absolute; 
+					top: 95%; 
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #cddad1; 
+					padding: 10px 20px;
+					border-radius: 5px;
+					font-size: 14px;
+					font-family: Times New Roman, Arial, sans-serif;
+					color: black;
+					cursor: pointer;
+					z-index: 1; 
+}
+
+.overlay-button:hover {
+						background-color: #7a2048;
+						color: 	#cddad1;
+}
+
+
+/* This is the "JUMP TO RECIPE" button on the other pages with the same format but different words and positioning as the buttons above. */
+.singlepage-button {
+						display: block; 
+						margin: 0 auto; 
+						margin-bottom: 50px;
+						background-color: #cddad1;
+						padding: 10px 20px;
+						border-radius: 5px;
+						font-size: 14px;
+						font-family: Times New Roman, Arial, sans-serif;
+						color: black;
+						cursor: pointer;
+						text-align: center;
+						width: fit-content; 
+						z-index: 1;
+						text-decoration: none; 
+}
+
+.singlepage-button:hover {
+							background-color: #7a2048;
+							color: #cddad1;
+}
+
+.singlepage-button a {
+						display: block; 
+						text-align: center; 
+						text-decoration: none;
+						color: inherit; 
+}
+
+
+
+
+
+/* Formatting of page titles*/
+h1, h2 {
+			text-align: center;
+			margin-bottom: 30px; 
+}
+
+ /* More formatting of text bodys */
+.description {
+				margin-top: 30px;
+				margin: 30px;
+}				
+
+
+/* This is the formatting of the section containing the actual recipes. */
+.recipe {
+		font-family: Times New Roman, Arial, sans-serif;
+		line-height: 1.6;
+		color: black; 
+		margin: 40px;
+		padding: 10px;
+		background-color: #FBF0EF;
+}
+
+ /* And this is the formatting of the written recipes. */
+.recipetext {
+				margin-left: 30px;
+				margin-right: 30px;
+}	
+
+
+
+
+/* This is an additional section for more design choices. */
+.enjoymessage {
+				display: flex;
+				justify-content: flex-end;
+				font-family: Times New Roman, Arial, sans-serif;
+				font-size: 20px;
+				color: white; 
+				width: 100%;
+				max-height: 100%;
+				background-color: #7a2048;
+				padding: 10px;
+				font-style: italic;
+				text-align: right;
+}			
+
+
+/* This comes directly after the picture of the recipes. */
+.servings {
+			display: flex;
+			justify-content: center;
+			background-color: #7a2048;
+			font-style: italic;
+			font-family: Times New Roman, Arial, sans-serif;
+			color: white;
+}
+
+
+
+
+/* SOME ADDITIONAL FORMATTING */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* This is for the Home Page */
+section#Recipes {
+					margin-top: 30px;
+}
+
+section#Recipes h2 {
+						font-size: 24px;
+						margin-bottom: 20px;
+						text-align: center;
+}
+
+section#Recipes h3 {
+						font-size: 20px;
+						margin: 20px 0 10px;
+						color: black;
+}
+
+/* And this for the main content of the other pages */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black; 
+}
+
+section#Recipe {
+					margin-top: 30px;
+}
+
+section#Recipe h2 {
+					font-size: 22px;
+					margin-bottom: 15px;
+					color: black; 
+}
+
+section#Recipe img {
+					display: block;
+					margin: 20px auto;
+					border-radius: 10px;
+					max-width: 100%;
+					height: auto;
+					border: 2px solid #ddd; 
+}
+
+section#Recipe ul {
+					margin: 20px 0;
+					padding-left: 20px;
+					list-style-type: disc;
+}
+
+section#Recipe ol {
+					margin: 20px 0;
+					padding-left: 20px;
+					list-style-type: decimal;
+}
+
+section#Recipe ul li, section#Recipe ol li {
+												margin-bottom: 10px;
+												line-height: 1.8;
+}
+
+
+/* FORMATTING OF THE TABLE*/
+table {
+			margin: 50px auto;
+			width: 60%;
+			border-collapse: collapse;
+	    	background-color: #FBF0EF;
+}
+
+/* Style for the table headers */
+th {
+    font-size: 20px;  
+    font-weight: bold; 
+    padding: 10px;
+	color: #7a2048;
+    text-align: center;
+}
+
+/* Style for table data */
+td {
+    font-size: 18px; 
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;  
+}
+
+/* FORMATTING THE YOUTUBE VIDEO */
+.video {
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+}
+
+iframe {
+		width: 560px; 
+		height: 315px;
+}
+
+
+
+
+
+
+/* FORMATTING OF THE FOOTER */
+.footer {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+			padding: 20px;
+			background-color: #cddad1; 
+			color: black;
+			width: 100%;
+			box-sizing: border-box;
+}
+
+/* Style each footer section */
+.footer-section {
+				  flex: 1;                 
+				  padding: 10px;           
+				  text-align: center;       
+}
+
+.footer-section:not(:first-child) {
+									border-left: 1px solid black; 
+}
+
+footer h4 {
+			margin-bottom: 10px;
+			font-size: 16px;
+}
+
+footer ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 15px;
+}
+
+footer ul li {
+				margin-bottom: 5px;
+}
+
+footer ul li a {
+					text-decoration: none;
+					color: #7a2048; 
+					transition: color 0.3s;
+}
+
+footer ul li a:hover {
+						color: black; 
+
+footer a {
+			color: #7a2048; 
+			text-decoration: underline;
+			transition: color 0.3s;
+}
+
+footer a:hover {
+				color: black; 
+}
+
+
+
+
+/* END OF CSS SCRIPT FILE */
